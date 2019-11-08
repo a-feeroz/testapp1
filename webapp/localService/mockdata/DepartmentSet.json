@@ -1,0 +1,16 @@
+[{
+	"DepartmentName": "EC",
+	"DepartmentDescription": "Electronics & Communication"
+}, {
+	"DepartmentName": "CS",
+	"DepartmentDescription": "Computer Science"
+}, {
+	"DepartmentName": "ME",
+	"DepartmentDescription": "Mechanical Engineering"
+}, {
+	"DepartmentName": "EE",
+	"DepartmentDescription": "Electrical Engineering"
+}, {
+	"DepartmentName": "CE",
+	"DepartmentDescription": "Civil Engineering"
+}]

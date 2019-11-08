@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema Namespace="default" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+			<EntityType Name="StudentDetailsSetType">
+				<Key>
+					<PropertyRef Name="RollNo"/>
+				</Key>
+				<Property Name="RollNo" Type="Edm.Int32" MaxLength="10" Nullable="false"/>
+				<Property Name="StudentName" Type="Edm.String" MaxLength="40"/>
+				<Property Name="Sex" Type="Edm.String" MaxLength="40"/>
+				<Property Name="Department" Type="Edm.String" MaxLength="5"/>
+				<Property Name="Date" Type="Edm.DateTime" Precision="7"/>
+			</EntityType>
+			<EntityType Name="DepartmentSetType">
+				<Key>
+					<PropertyRef Name="DepartmentName"/>
+				</Key>
+				<Property Name="DepartmentName" Type="Edm.String" MaxLength="40"/>
+				<Property Name="DepartmentDescription" Type="Edm.String" MaxLength="40"/>
+			</EntityType>
+			<EntityContainer Name="StudentEntities" m:IsDefaultEntityContainer="true">
+				<EntitySet EntityType="default.StudentDetailsSetType" Name="StudentDetailsSet"/>
+				<EntitySet EntityType="default.DepartmentSetType" Name="DepartmentSet"/>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

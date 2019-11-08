@@ -1,0 +1,48 @@
+<mvc:View controllerName="com.sap.StudentDetails_SimpleForm.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<HBox width="100%">
+							<items>
+								<VBox width="50%">
+									<items>
+										<l:Grid defaultSpan="L12 M12 S12" width="auto">
+											<l:content>
+												<f:SimpleForm id="SimpleFormChange354" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" title="Details"
+													labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1" class="editableForm">
+													<f:content>
+														<Label text="Roll No"/>
+														<Input value=""/>
+														<Label text="Name"/>
+														<Input value=""></Input>
+														<Label text="Sex"/>
+														<Select width="100%" forceSelection="false">
+															<items>
+																<core:Item text="Male"/>
+																<core:Item text="Female"/>
+															</items>
+														</Select>
+														<Label text="Department"/>
+														<Input showValueHelp="true" id="idDepSelection" placeholder="Select Department" valueHelpOnly="true" valueHelpRequest="onSelectionDepartment" />
+														<Label text="Date"/>
+														<DatePicker id="DP1" placeholder="Enter Date ..." change="handleChange" class="sapUiSmallMarginBottom"/>
+													</f:content>
+												</f:SimpleForm>
+											</l:content>
+										</l:Grid>
+									</items>
+								</VBox>
+								<VBox width="50%">
+									<items></items>
+								</VBox>
+							</items>
+						</HBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
