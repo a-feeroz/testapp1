@@ -19,8 +19,8 @@ sap.ui.define([
 		},
 		//Department Selection from Value Help
 		onSelectionChange: function (oEvent) {
-			var SelectedItem = oEvent.getSource().getSelectedItem();
-			var SelectedItemValue = SelectedItem.getTitle();
+			var SelectedItem1 = oEvent.getSource().getSelectedItem();
+			var SelectedItemValue = SelectedItem1.getTitle();
 			this.getView().byId("idDepSelection").setValue(SelectedItemValue);
 			this._Value.close();
 
